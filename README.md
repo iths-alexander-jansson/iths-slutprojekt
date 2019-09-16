@@ -2,11 +2,13 @@
 
 ## Kravspecifikation
 
-* Mobil- och desktopversion. Mobile First.
-* Analog skiss och mockup i Figma.
-* Grid och Flex för layouting.
-* Bilder.
-* Typografi.
-* Minst 2 html-filer som är länkade.
-* Animationer.
-* Korrekt mappstruktur
+- Mobil- och desktopversion. Mobile First.
+- Analog skiss och mockup i Figma.
+- Grid och Flex för layouting.
+- Bilder.
+- Typografi.
+- Minst 2 html-filer som är länkade.
+- Animationer.
+- Korrekt mappstruktur
+
+Provade att publicera på ett domän jag äger, funkar fint! http://ajstockholmab.se/
