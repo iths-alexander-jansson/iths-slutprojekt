@@ -144,6 +144,12 @@ nav ul li a:hover::after {
   transform: scaleX(1);
 }
 
+.higha{
+  font-family: address-sans-pro-condensed, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 @keyframes slideIn {
   from {
   }
@@ -156,6 +162,15 @@ nav ul li a:hover::after {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.images{
+  margin: 0 auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery{
+  margin-bottom: 2rem;
 }
 
 .swipe {
@@ -220,7 +235,7 @@ nav ul li a:hover::after {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   padding: 10px;
   width: 230px;
   cursor: pointer;
@@ -259,6 +274,7 @@ footer {
   background-image: none;
   display: flex;
   justify-content: center;
+  font-size: 16px;
 }
 
 .info {
@@ -287,9 +303,87 @@ footer {
 .i {
   grid-column: auto / span 5;
   grid-row: row 3;
+  color: #333;
 }
 .hide-mob {
   display: none;
+}
+.box {
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 20px;
+  background-clip: padding-box;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttontwo {
+  font-family: address-sans-pro-condensed, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #db4646;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  width: 230px;
+}
+.buttontwo:hover {
+  background: rgb(137, 137, 137);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(137, 137, 137);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: white;
+}
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #db4646;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
 }
 
 @media only screen and (min-width: 650px) {
@@ -324,4 +418,15 @@ footer {
     width: 350px;
     height: 50px;
   }
+
+  .gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 478px;
+  }
+
+.images{
+  margin: 1rem 1rem 1rem 1rem;
+  max-width: 900px;
 }
